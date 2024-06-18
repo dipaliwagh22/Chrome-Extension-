@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chrome-Extension</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <div class="widget">
+    <h2>Google Slides</h2>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ7Jo2lDh60T6CJBEFPS-yLhiJ9_2aTUnY3nXDECgRmKjt1sUUa-csRAMR8Y-_lz3zcghYx8kWHv-tj/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+  </div>
+  
+  <div class="widget">
+    <h2>Timer</h2>
+    <div id="timer">25:00</div>
+    <div id="setTime">
+      <input type="number" id="pomodoroMinutes" value="25" min="1">
+      <button id="setTimeButton">Set Time</button>
+    </div>
+    <div class="timer-buttons">
+      <button id="startButton" class="timer-btn">
+        <img src="start.png" alt="Start">
+      </button>
+      <button id="pauseButton" class="timer-btn">
+        <img src="pause.png" alt="Pause">
+      </button>
+      <button id="resetButton" class="timer-btn">
+        <img src="reset.png" alt="Reset">
+      </button>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="widget full-width" id="scribble-note-widget">
+    <h2>Scribble Note</h2>
+    <input type="text" id="scribble-heading" placeholder="Enter scribble heading">
+    <div id="scribble-container">
+      <textarea id="note-textarea" placeholder="Type your note here..."></textarea>
+      <canvas id="scribble-canvas"></canvas>
+    </div>
+    <button id="clear-canvas">Clear</button>
+    <button id="save-canvas">Save</button>
+  </div>
+  
+
+  <div class="widget">
+    <h2>Saved Scribbles</h2>
+    <div id="saved-scribbles-container" class="saved-scribbles"></div>
+  </div>
+
+  <div class="daily-checklist-widget">
+    <h2>Daily Growth Checklist</h2>
+    <input type="text" id="add-task-input" placeholder="Add a new task">
+    <button id="add-task-button">Add Task</button>
+    <ul id="task-list">
+      
+    </ul>
+  </div>
+  <script src="newtab.js"></script>
+</body>
+</html>
